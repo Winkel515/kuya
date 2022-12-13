@@ -17,8 +17,6 @@ a {
   box-sizing: border-box;
 }
 
-.logo-text {
+.text-primary {
   color: #48487f;
-  font-weight: bold;
-  font-size: 22px;
 }

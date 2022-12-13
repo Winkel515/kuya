@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Comfortaa } from '@next/font/google';
+import EmailIcon from '@mui/icons-material/Email';
+import DirectionsIcon from '@mui/icons-material/Directions';
 
 const comfortaa = Comfortaa({ subsets: ['latin'] });
 
@@ -13,7 +15,9 @@ function NavBar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
-              <h2 className={`${comfortaa.className} logo-text`}>Cafe Kuya</h2>
+              <h2 className={`${comfortaa.className} text-primary text-2xl`}>
+                Café Kuya
+              </h2>
             </a>
             <div className="md:hidden">
               <button
@@ -60,17 +64,15 @@ function NavBar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="">
-                <Link href="/">Blogs</Link>
-              </li>
-              <li className="">
-                <Link href="/">About US</Link>
-              </li>
-              <li className="">
+              <li className={`${comfortaa.className} text-primary flex`}>
+                <EmailIcon />
+                <div className="inline-block w-2"></div>
                 <Link href="/">Contact US</Link>
+              </li>
+              <li className={`${comfortaa.className} text-primary flex`}>
+                <DirectionsIcon />
+                <div className="inline-block w-2"></div>
+                <Link href="/">Get Directions</Link>
               </li>
             </ul>
           </div>
