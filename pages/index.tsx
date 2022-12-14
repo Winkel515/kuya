@@ -4,10 +4,6 @@ import Image from 'next/image';
 import Review from '../components/Review';
 
 const comfortaa = Comfortaa({ subsets: ['latin'] });
-const ledger = Ledger({
-  subsets: ['latin'],
-  weight: '400',
-});
 
 export default function Home() {
   return (
@@ -19,10 +15,10 @@ export default function Home() {
         >
           Café Kuya
         </h1>
-        <p className={`${ledger.className}`}>Coffee Shop in Brossard</p>
-        <p className={`${ledger.className}`}>Opening at 8:00 AM tomorrow</p>
+        <p className={`${comfortaa.className}`}>Coffee Shop in Brossard</p>
+        <p className={`${comfortaa.className}`}>Opening at 8:00 AM tomorrow</p>
         <button
-          className={`${ledger.className} bg-primary hover:bg-hover text-white mt-5 h-12 w-52 w-52 h-14 px-4 rounded`}
+          className={`${comfortaa.className} bg-primary hover:bg-hover text-white mt-5 h-12 w-52 w-52 h-14 px-4 rounded`}
         >
           CONTACT US
         </button>
