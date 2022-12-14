@@ -1,5 +1,5 @@
 import NavBar from '../components/NavBar';
-import { Comfortaa, Ledger } from '@next/font/google';
+import { Comfortaa } from '@next/font/google';
 import Image from 'next/image';
 import Review from '../components/Review';
 import Head from 'next/head';
