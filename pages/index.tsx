@@ -2,12 +2,17 @@ import NavBar from '../components/NavBar';
 import { Comfortaa, Ledger } from '@next/font/google';
 import Image from 'next/image';
 import Review from '../components/Review';
+import Head from 'next/head';
 
 const comfortaa = Comfortaa({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Café Kuya</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <NavBar />
       <div className="flex flex-col items-center my-24">
         <h1
@@ -32,7 +37,7 @@ export default function Home() {
         <div className="flex flex-col items-center mx-20">
           <hr className="bg-black my-5 w-14 h-0.5 bg-black rounded border-0" />
           <h2 className={`${comfortaa.className} mb-10`}>TESTIMONIALS</h2>
-          <div className="flex">
+          <div className="flex flex-wrap">
             <Review
               author="Christopher C"
               text="Phil and the crew are really amazing at what they do. This place
