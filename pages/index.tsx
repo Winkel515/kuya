@@ -34,7 +34,7 @@ export default function Home() {
           height={500}
           alt="coffee"
         />
-        <div className="flex flex-col items-center mx-20">
+        <div className="flex flex-col items-center lg:mx-20 mx-0">
           <hr className="bg-black my-5 w-14 h-0.5 bg-black rounded border-0" />
           <h2 className={`${comfortaa.className} mb-10`}>TESTIMONIALS</h2>
           <div className="flex flex-wrap">

@@ -6,7 +6,7 @@ const comfortaa = Comfortaa({ subsets: ['latin'] });
 
 function Review({ text, author }: { text: string; author: string }) {
   return (
-    <div className={`${comfortaa.className} flex flex-col mx-10 flex-1 mb-10`}>
+    <div className={`${comfortaa.className} flex flex-col mx-10 flex-1 my-10`}>
       <div className="flex">
         <StarRating />
         <div className="w-5"></div>
