@@ -20,17 +20,11 @@ export default function Home() {
         </h1>
         <p className={`${ledger.className}`}>Coffee Shop in Brossard</p>
         <p className={`${ledger.className}`}>Opening at 8:00 AM tomorrow</p>
-        <Button
-          variant="contained"
-          className={`${ledger.className} bg-primary mt-5 h-12 w-44 px-6 m-2`}
-          sx={{
-            '&:hover': {
-              backgroundColor: 'grey',
-            },
-          }}
+        <button
+          className={`${ledger.className} bg-primary hover:bg-hover text-white mt-5 h-12 w-44 px-6 py-2 px-4 rounded`}
         >
           CONTACT US
-        </Button>
+        </button>
       </div>
     </div>
   );
