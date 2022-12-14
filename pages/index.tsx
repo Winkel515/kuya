@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
 import NavBar from '../components/NavBar';
 import { Comfortaa, Ledger } from '@next/font/google';
+import Image from "next/image";
 
 const comfortaa = Comfortaa({ subsets: ['latin'] });
 const ledger = Ledger({
@@ -31,6 +32,15 @@ export default function Home() {
         >
           CONTACT US
         </Button>
+        <Image
+          src={'https://lh3.googleusercontent.com/p/AF1QipM8dnS3e5UhVqU7vFQzJ04UcFopoUdm3tVX7vpx=w1080-h608-p-no-v0'}
+          alt='kuya coffee cup'
+          className='my-20'
+          width = {800}
+          height= {800}
+        />
+      </div>
+      <div>
       </div>
     </div>
   );
