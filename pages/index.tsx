@@ -4,8 +4,6 @@ import Image from 'next/image';
 import Review from '../components/Review';
 import Head from 'next/head';
 
-//test
-
 const comfortaa = Comfortaa({ subsets: ['latin'] });
 
 export default function Home() {
